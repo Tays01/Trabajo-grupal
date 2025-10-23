@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e9edf1; /* Gris claro */
+    color: #f53e3e; /* Texto oscuro para contraste */
+    margin: 10;
+    padding: 10;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 300px; /* Altura fija para el banner */
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px; /* Ancho máximo para centrar contenido */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px;
+}
+
+/* Sección de perfil */
+.profile-section {
+    text-align: center; /* Centra todo */
+    margin-top: -80px; /* Sube la foto para que se superponga al banner */
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Hace la imagen circular */
+    border: 4px solid #007BFF; /* Borde azul */
+    object-fit: cover; /* Ajusta la imagen */
+    margin-bottom: 15px;
+}
+
+.nombre {
+    font-size: 2.5rem; /* Tamaño grande para el nombre */
+    color: #007BFF; /* Azul */
+    margin: 10px 0;
+}
+
+.correo {
+    font-size: 1.2rem;
+    color: #524bb1; /* Gris para menos énfasis */
+    margin: 0;
+}
+
+/* Pie de página */
+.footer-section {
+    margin-top: 20px;
+}
+
+.cedula {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    font-size: 1rem;
+    line-height: 1.6; /* Espaciado para legibilidad */
+    text-align: justify;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .banner {
+        height: 200px; /* Banner más pequeño en móviles */
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .nombre {
+        font-size: 2rem; /* Nombre más pequeño */
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+/* Accesibilidad: Enfoque para navegación por teclado */
+.profile-img:focus {
+    outline: 2px solid #007BFF;
+}
